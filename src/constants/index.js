@@ -154,7 +154,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Samir does.",
-    name: "Abdul Raheman",
+    name: "Richard Freick",
     designation: "Ecommerce Business",
     company: "justbuyz",
     image: secondTestimonial,

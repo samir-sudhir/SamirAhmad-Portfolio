@@ -88,10 +88,10 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
         Proactive Software Engineer with hands-on experience in the complete
         development lifecycle, from backend services to frontend interfaces.
-        Proficient in building and deploying scalable web applications using PHP
-        Python (Django), and JavaScript. Experienced in creating secure backend
-        systems, managing MySQL/PostgreSQL databases, and leveraging AWS and
-        Docker for cloud deployment. Eager to contribute technical skills and a
+        Proficient in building and deploying scalable web applications using
+        PHP, Python, and JavaScript. Experienced in creating secure backend
+        systems, managing SQL and NoSQL databases, and leveraging AWS and Docker
+        for cloud deployment. Eager to contribute technical skills and a
         collaborative mindset to a Software Development tasks.
       </p>
 
