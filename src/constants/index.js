@@ -1,4 +1,3 @@
-
 import {
   logo,
   backend,
@@ -9,14 +8,13 @@ import {
   menu,
   close,
   css,
-  gearXpert,
+  project1,
   project2,
   project3,
   mysql,
   express,
   aws,
   mui,
-  
   gsap,
   framer,
   figma,
@@ -32,20 +30,24 @@ import {
   firstTestimonial,
   secondTestimonial,
   thirdTestimonial,
-} from '../assets'
+} from "../assets";
 
-
-// Import Tekisky separately
-import tekisky from "../assets/company/tekisky.png";
-
+import novatoreIcon from "../assets/company/novatore.png";
+import pfIcon from "../assets/company/programmersforce.png";
+// Custom tech stack logos
+import php from "../assets/tech/php.png";
+import laravel from "../assets/tech/laravel.png";
+import python from "../assets/tech/python.png";
+import django from "../assets/tech/django.png";
+import nextjs from "../assets/tech/nextjs.png";
+import docker from "../assets/tech/docker.png";
+import postgresql from "../assets/tech/postgresql.png";
+import bitbucket from "../assets/tech/bitbucket.png";
 
 export const navLinks = [
-
-
   {
     id: "about",
     title: "About",
-    
   },
   {
     id: "work",
@@ -71,99 +73,71 @@ const services = [
     icon: backend,
   },
   {
-    title: "Ui UX Designer",
-    icon: creator,
+    title: "Cloud Operations",
+    icon: web,
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "gsap",
-    icon: gsap,
-  },
-  {
-    name: "framer",
-    icon: framer,
-  },
+  // Core Languages
+  { name: "PHP", icon: php },
+  { name: "Python", icon: python },
+  { name: "JavaScript", icon: javascript },
 
- 
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Material Ui",
-    icon: mui,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "Express Js",
-    icon: express,
-  },
-  {
-    name: "AWS",
-    icon: aws,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "MySql",
-    icon: mysql,
-  },
+  // Frontend
+  { name: "React JS", icon: reactjs },
+  { name: "Next JS", icon: nextjs },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Material UI", icon: mui },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
 
-  {
-    name: "git",
-    icon: git,
-  },
- 
+  // Backend
+  { name: "Laravel", icon: laravel },
+  { name: "Django", icon: django },
+  { name: "Express JS", icon: express },
+  { name: "Node JS", icon: nodejs },
 
+  // Databases
+  { name: "MySQL", icon: mysql },
+  { name: "PostgreSQL", icon: postgresql },
+  { name: "MongoDB", icon: mongodb },
+
+  // Cloud & DevOps
+  { name: "AWS", icon: aws },
+  { name: "Docker", icon: docker },
+
+  // Tools
+  { name: "Git", icon: git },
+  { name: "Bitbucket", icon: bitbucket },
+  { name: "Redux Toolkit", icon: redux },
 ];
 
 const experiences = [
   {
-    title: "Full-Stack Developer",
-    company_name: "Tekisky",
-    icon: tekisky,
+    title: "Associate Software Engineer",
+    company_name: "Novatore Solutions",
+    icon: novatoreIcon, // place logo in /assets/company/
     iconBg: "#383E56",
-    date: "Jan 2023 - present",
+    date: "Feb 2025 – Present",
     points: [
-      "Developing and maintaining web applications using MERN technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed SaaS platform modules in Laravel for financial reconciliation and payouts.",
+      "Implemented job scheduling and queues for large-scale data processing.",
+      "Optimized pipelines for consistency across monthly financial cycles.",
+      "Collaborated with teams to ensure reliable and efficient system operations.",
+    ],
+  },
+  {
+    title: "Backend Development Trainee",
+    company_name: "Programmers Force",
+    icon: pfIcon,
+    iconBg: "#E6DEDD",
+    date: "Aug 2024 – Nov 2024",
+    points: [
+      "Built backend services in Laravel and designed secure RESTful APIs.",
+      "Integrated authentication and authorization using JWT.",
+      "Optimized SQL queries and implemented database indexing for better performance.",
+      "Contributed to agile sprints, participated in code reviews, and maintained documentation.",
     ],
   },
 ];
@@ -171,15 +145,15 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Huzaif proved me wrong.",
-    name: "MD Mustaqeem",
-    designation: "Ecommerce",
-    company: "QuickMart",
+      "I thought it was impossible to make our work managed through semi-auto operation in our management system , but Samir proved me wrong.",
+    name: "Naem Stark",
+    designation: "Operation Manager",
+    company: "SleeckManage",
     image: firstTestimonial,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Huzaif does.",
+      "I've never met a web developer who truly cares about their clients' success like Samir does.",
     name: "Abdul Raheman",
     designation: "Ecommerce Business",
     company: "justbuyz",
@@ -187,86 +161,81 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Huzaif optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "Samir not only improved our site but helped us understand the process. The project was delivered on time, and the results were beyond expectations!",
     name: "James Wang",
     designation: "CTO",
-    company: "456 Enterprises",
+    company: "FactThrise",
     image: thirdTestimonial,
   },
 ];
 
 const projects = [
   {
-    name: "Tekisky Mart",
+    name: "PrepPro - AI Based Quiz Generator",
     description:
-      "Tekisky Mart is a web-based platform that allows users to search, explore, and purchase a wide range of products from various providers, offering a seamless and efficient shopping experience.",
+      "An AI-powered platform that generates quizzes from textual content using NLP. Built with Python (Django REST API) and Next.js for interactive dashboards with real-time analytics and user feedback tracking.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nextjs",
         color: "white-text-gradient",
       },
       {
-        name: "node",
+        name: "nlp",
         color: "pink-text-gradient",
       },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
- 
     ],
-    image: project2,
-    source_code_link: "https://github.com/",
+    image: project2, // You can replace with a screenshot of PrepPro
+    source_code_link: "https://github.com/", // add repo link if public
   },
   {
-    name: "GearXpert",
+    name: "MiHRM - HR Management System",
     description:
-      "GearXpert is your ultimate destination for premium auto parts and accessories, Whether you're an automobile enthusiast or a professional, find everything you need to upgrade, repair.",
+      "A secure and scalable HR management system featuring attendance, payroll, and leave management modules, 2FA integrated, automated payroll processing, and insightful analytics dashboards.",
+    tags: [
+      {
+        name: "laravel",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Vue js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project3, // Replace with your MiHRM screenshot
+    source_code_link: "https://github.com/", // add repo link if available
+  },
+  {
+    name: "Privado - Secure  Chat App",
+    description:
+      "A private chat application built using React, and Pusher for real-time communication. Features end-to-end message delivery, notifications, and a responsive modern UI for seamless chatting across devices.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "emailJs",
-        color: "green-text-gradient",
+        name: "Firebase",
+        color: "red-text-gradient",
       },
       {
-        name: "Gsap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: gearXpert,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "GoGroove-Ecommerce",
-    description:
-      "Go-Groove is your ultimate destination for premium products across various categories. Whether you're a savvy shopper or a professional, enhance, and simplify your lifestyle—all in one place!",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "white-text-gradient",
-      },
-      {
-        name: "node",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
+        name: "pusher",
         color: "green-text-gradient",
       },
     ],
-    image: project3,
-    source_code_link: "https://github.com/",
+    image: project1, // Replace with your Privado screenshot
+    source_code_link: "https://github.com/", // add repo link if you want
   },
 ];
 
